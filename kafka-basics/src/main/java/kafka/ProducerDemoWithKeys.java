@@ -25,8 +25,13 @@ public class ProducerDemoWithKeys {
 
         //create a producer record and send the data - async operation
         for (int i = 0; i < 10; i++) {
+
+            var topic = "demo_java";
+            var value = "from java code" + i;
+            var key = "id_" + i;
+
             ProducerRecord<String, String> producerRecord =
-                    new ProducerRecord<>("demo_java", "another hello from java code" + i);
+                    new ProducerRecord<>(topic, key, value);
             producer.send(producerRecord, new Callback() {
                 @Override
                 public void onCompletion(RecordMetadata metadata, Exception e) {
@@ -34,6 +39,7 @@ public class ProducerDemoWithKeys {
                         //success
                         log.info("Receive new metadata/ \n" +
                                 "Topic: " + metadata.topic() + "/ \n" +
+                                "Key: " + producerRecord.key() + "/ \n" +
                                 "Partition: " + metadata.partition() + "/ \n" +
                                 "Offset: " + metadata.offset() + "/ \n" +
                                 "Timestamp: " + metadata.timestamp());

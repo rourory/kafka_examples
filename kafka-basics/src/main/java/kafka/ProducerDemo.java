@@ -13,7 +13,6 @@ public class ProducerDemo {
 
 
     public static void main(String[] args) {
-        System.out.println("Hello");
         log.warn("from debug");
 
         //create Producer Properties
