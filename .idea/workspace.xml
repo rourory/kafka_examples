@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9e91a0e-59d0-498f-bcba-e003a7d35196" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/kafka/advanced/ConsumerDemoAssignSeek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/kafka/advanced/ConsumerDemoRebalanceListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/kafka/advanced/ConsumerDemoThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/kafka/advanced/ConsumerRebalanceListenerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/kafka/ConsumerDemoCooperative.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/kafka/ConsumerDemoCooperative.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/Admin/Documents/JavaProjects/sqlead_app",
+    "last_opened_file_path": "C:/Users/Admin/Documents/JavaProjects/ExampleKafkaProject/kafka-basics/src/main/java/kafka",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -56,6 +59,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\JavaProjects\ExampleKafkaProject\kafka-basics\src\main\java\kafka" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="kafka" />
     </key>
@@ -168,7 +174,7 @@
       <workItem from="1696336659943" duration="3358000" />
       <workItem from="1696413045458" duration="104000" />
       <workItem from="1696493451241" duration="5521000" />
-      <workItem from="1696748774950" duration="4624000" />
+      <workItem from="1696748774950" duration="5983000" />
     </task>
     <servers />
   </component>
