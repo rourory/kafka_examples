@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9e91a0e-59d0-498f-bcba-e003a7d35196" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/kafka/advanced/ConsumerDemoAssignSeek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/kafka/advanced/ConsumerDemoRebalanceListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/kafka/advanced/ConsumerDemoThreads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/kafka/advanced/ConsumerRebalanceListenerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-wikimedia/src/main/java/org/sts/example/kafka/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +21,42 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExampleKafkaProject" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExampleKafkaProject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExampleKafkaProject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ExampleKafkaProject" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,7 +90,7 @@
     "last_opened_file_path": "C:/Users/Admin/Documents/JavaProjects/ExampleKafkaProject/kafka-basics/src/main/java/kafka",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.49080458",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
@@ -66,7 +103,7 @@
       <recent name="kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConsumerDemoCooperative">
+  <component name="RunManager" selected="Application.WikimediaChangesProducer">
     <configuration name="ConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kafka.ConsumerDemo" />
       <module name="ExampleKafkaProject.kafka-basics.main" />
@@ -81,6 +118,8 @@
       </method>
     </configuration>
     <configuration name="ConsumerDemoCooperative" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" singleton="false" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="kafka.ConsumerDemoCooperative" />
       <module name="ExampleKafkaProject.kafka-basics.main" />
       <extension name="coverage">
@@ -94,20 +133,9 @@
       </method>
     </configuration>
     <configuration name="ConsumerDemoWithShutdown" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" singleton="false" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="kafka.ConsumerDemoWithShutdown" />
-      <module name="ExampleKafkaProject.kafka-basics.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kafka.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProducerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kafka.ProducerDemo" />
       <module name="ExampleKafkaProject.kafka-basics.main" />
       <extension name="coverage">
         <pattern>
@@ -145,20 +173,78 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WikimediaChangesProducer" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sts.example.kafka.WikimediaChangesProducer" />
+      <module name="ExampleKafkaProject.kafka-producer-wikimedia.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sts.example.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleKafkaProject [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ExampleKafkaProject [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.ConsumerDemoWithShutdown" />
       <item itemvalue="Application.ConsumerDemoCooperative" />
+      <item itemvalue="Application.WikimediaChangesProducer" />
       <item itemvalue="Application.ConsumerDemo" />
-      <item itemvalue="Application.ProducerDemo" />
       <item itemvalue="Application.ProducerDemoWithCallback" />
       <item itemvalue="Application.ProducerDemoWithKeys" />
+      <item itemvalue="Gradle.ExampleKafkaProject [build]" />
+      <item itemvalue="Gradle.ExampleKafkaProject [clean]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ExampleKafkaProject [build]" />
+        <item itemvalue="Gradle.ExampleKafkaProject [clean]" />
         <item itemvalue="Application.ProducerDemoWithKeys" />
         <item itemvalue="Application.ConsumerDemo" />
         <item itemvalue="Application.ProducerDemoWithCallback" />
-        <item itemvalue="Application.ProducerDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +260,8 @@
       <workItem from="1696336659943" duration="3358000" />
       <workItem from="1696413045458" duration="104000" />
       <workItem from="1696493451241" duration="5521000" />
-      <workItem from="1696748774950" duration="5983000" />
+      <workItem from="1696748774950" duration="6667000" />
+      <workItem from="1697203379902" duration="866000" />
     </task>
     <servers />
   </component>
