@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9e91a0e-59d0-498f-bcba-e003a7d35196" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-producer-wikimedia/src/main/java/org/sts/example/kafka/WikimediaChangeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer-opensearch/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer-opensearch/src/main/java/org/sts/example/kafka/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-basics/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-producer-wikimedia/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer-wikimedia/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-producer-wikimedia/src/main/java/org/sts/example/kafka/WikimediaChangesProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer-wikimedia/src/main/java/org/sts/example/kafka/WikimediaChangesProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +265,7 @@
       <workItem from="1697284121015" duration="2163000" />
       <workItem from="1697449426978" duration="3555000" />
       <workItem from="1697786277343" duration="7898000" />
-      <workItem from="1698652228832" duration="2803000" />
+      <workItem from="1698652228832" duration="5466000" />
     </task>
     <servers />
   </component>
