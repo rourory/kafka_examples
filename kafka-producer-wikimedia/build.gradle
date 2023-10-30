@@ -9,13 +9,20 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
 dependencies {
     implementation 'org.apache.kafka:kafka-clients:3.5.1'
     implementation 'org.slf4j:slf4j-api:2.0.9'
     implementation 'org.slf4j:slf4j-simple:2.0.9'
 
     implementation 'com.squareup.okhttp3:okhttp:4.11.0'
-    implementation 'com.launchdarkly:okhttp-eventsource:4.1.1'
+
+    implementation 'com.launchdarkly:okhttp-eventsource:2.5.0'
 
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
 }
