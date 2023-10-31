@@ -1,5 +1,7 @@
 package org.sts.example.kafka;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonParser;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpHost;
 import org.apache.http.auth.AuthScope;
@@ -76,6 +78,18 @@ public class OpenSearchConsumer {
         return new KafkaConsumer<>(properties);
     }
 
+    private static String extractId(String json) {
+        // gson library
+        return JsonParser.parseString(json)
+                .getAsJsonObject()
+                .get("meta")
+                .getAsJsonObject()
+                .get("id")
+                .getAsString();
+    }
+
+    ;
+
     public static void main(String[] args) throws IOException {
         String index = "wikimedia";
         var topic = "wikimedia.recentchange";
@@ -109,9 +123,19 @@ public class OpenSearchConsumer {
 
                 for (ConsumerRecord<String, String> record : records) {
                     //send the record into OpenSearch
+
+                    // Strategy 1
+                    // define an ID using Kafka Record coordinats
+//                    String id = record.topic() + "_" + record.partition() + "_" + record.offset();
+
                     try {
+                        // Strategy 2
+                        // we extract the ID from the JSON value
+                        String id = extractId(record.value());
+
                         IndexRequest indexRequest = new IndexRequest(index)
-                                .source(record.value(), XContentType.JSON);
+                                .source(record.value(), XContentType.JSON)
+                                .id(id);
                         IndexResponse indexResponse = openSearchClient.index(indexRequest, RequestOptions.DEFAULT);
                         log.info("Inserted 1 document into OpenSearch with id: {}", indexResponse.getId());
                     } catch (Exception e) {
