@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9e91a0e-59d0-498f-bcba-e003a7d35196" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-consumer-opensearch/src/main/java/org/sts/example/kafka/OpenSearchConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer-opensearch/src/main/java/org/sts/example/kafka/OpenSearchConsumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -261,7 +260,7 @@
       <workItem from="1698652228832" duration="9779000" />
       <workItem from="1698741280872" duration="5281000" />
       <workItem from="1698750236774" duration="2235000" />
-      <workItem from="1698836659952" duration="1912000" />
+      <workItem from="1698836659952" duration="2239000" />
     </task>
     <servers />
   </component>
