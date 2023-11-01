@@ -76,21 +76,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/Courses/Java/[FreeCourseSite.com] Udemy - Apache Kafka Series - Learn Apache Kafka for Beginners v3/kafka-beginners-course-main",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.49080458",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Courses/Java/[FreeCourseSite.com] Udemy - Apache Kafka Series - Learn Apache Kafka for Beginners v3/kafka-beginners-course-main&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.49080458&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Documents\JavaProjects\ExampleKafkaProject\kafka-basics\src\main\java\kafka" />
@@ -99,7 +99,7 @@
       <recent name="kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OpenSearchConsumer">
+  <component name="RunManager" selected="Application.WikimediaChangesProducer">
     <configuration name="ConsumerDemoCooperative" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" singleton="false" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -260,7 +260,8 @@
       <workItem from="1697786277343" duration="7898000" />
       <workItem from="1698652228832" duration="9779000" />
       <workItem from="1698741280872" duration="5281000" />
-      <workItem from="1698750236774" duration="621000" />
+      <workItem from="1698750236774" duration="2235000" />
+      <workItem from="1698836659952" duration="1912000" />
     </task>
     <servers />
   </component>

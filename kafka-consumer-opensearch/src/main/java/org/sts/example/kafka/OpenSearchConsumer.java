@@ -73,6 +73,7 @@ public class OpenSearchConsumer {
         properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, groupId);
         properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, offsetResetConfig);
+        properties.setProperty(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
 
         // create Consumer
         return new KafkaConsumer<>(properties);
@@ -143,6 +144,10 @@ public class OpenSearchConsumer {
                         log.error("Inserting document has failed. The next data was lost: {}", record.value());
                     }
                 }
+
+                // commit offset after the batch is consumed
+                consumer.commitSync();
+                log.info("Offset have been commited!");
             }
         }
     }
