@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'org.sts.example.kafka'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka-streams:3.5.1'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.2'
+
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+    implementation 'org.slf4j:slf4j-simple:2.0.9'
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+}
+
+test {
+    useJUnitPlatform()
+}
