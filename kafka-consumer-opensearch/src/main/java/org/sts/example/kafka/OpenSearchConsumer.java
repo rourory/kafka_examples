@@ -95,7 +95,7 @@ public class OpenSearchConsumer {
 
     public static void main(String[] args) throws IOException {
         String index = "wikimedia";
-        var topic = "wikimedia.recentchange";
+        var topic = "wikimedia.recentchange.connect";
 
         // first create an OpenSearch Client
         RestHighLevelClient openSearchClient = createOpenSearchClient();
